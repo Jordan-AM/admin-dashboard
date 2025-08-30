@@ -14,6 +14,7 @@ body {
     background-color: #bbb;
 }
 
+/* Sidebar */
 .sidebar-list {
     height: 100vh;
     width: 260px;
@@ -42,7 +43,7 @@ body {
     display: inline-block;
     width: 100%;
     height: 100%;
-    transition: transform 0.5s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 .sidebar-list-item a:hover {
@@ -50,6 +51,15 @@ body {
     z-index: 2;
 
     &>span {
-        transform:  scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+.sidebar-list-item a:active {
+    box-shadow: 0 0 5px 0 inset black;
+    z-index: 2;
+
+    &>span {
+        transform: scale(0.9);
     }
 }
