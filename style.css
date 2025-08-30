@@ -8,21 +8,18 @@ body{
 .sidebar-list{
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 100vh;
     width: 260px;
-    position: fixed;
-    top: 0;
-    left: 0;
     background-color: darkolivegreen;
     display: grid;
     grid-template-rows: 1fr 3fr 2fr;
 }
 
-#sidebar ul li {
+.sidebar-list-item {
     list-style: none;
 }
 
-#sidebar ul li a {
+.sidebar-list-item a {
     display: block;
     font-family: monospace;
     text-decoration: none;
@@ -30,5 +27,5 @@ body{
     font-size: 1.5rem;
     color: white;
     position: relative;
-    padding: 25px 0 25px 25px;
-}
+    padding: 1.5rem;
+} 
