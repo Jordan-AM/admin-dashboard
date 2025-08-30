@@ -42,8 +42,13 @@ body {
     font-size: 1.5rem;
     color: white;
     position: relative;
-    padding: 1.5rem 2rem;
+    padding: 2rem 2rem;
     transition: all 0.1s ease;
+}
+
+.sli2 > a,
+.sli3 > a {
+    padding: 0.5rem 2rem;    
 }
 
 .sidebar-list-item a span {
