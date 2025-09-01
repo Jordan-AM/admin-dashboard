@@ -183,7 +183,7 @@ body {
     border-radius: 50%;
 }
 
-.user-info > .fa-bell:hover{
+.user-info>.fa-bell:hover {
     color: var(--primary-color);
     text-shadow: 0 0 2px var(--primary-color);
 }
@@ -262,31 +262,36 @@ body {
     grid-area: main;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
         'projects announcements'
         'projects trending';
     gap: 1rem;
 }
 
-/* Projects */
-.projects-section {
+.projects-section,
+.announcements-section,
+.trending-section {
     grid-area: projects;
     display: grid;
     grid-template-rows: auto 1fr;
     gap: 1rem;
+    justify-items: start;
 }
 
-.projects-section header h1 {
+.projects-section header h1,
+.announcements-section header h1,
+.trending-section header h1 {
     font-size: 1.5rem;
+    font-weight: normal;
 }
 
+/* Projects */
 .projects-container {
     display: grid;
     grid-template-columns: repeat(2, minmax(20rem, 1fr));
     grid-template-rows: repeat(3, minmax(10rem, 1fr));
     justify-content: center;
-    align-content: center;
     gap: 2rem;
 }
 
@@ -294,11 +299,12 @@ body {
     padding: 2rem 1.5rem;
     background-color: #fff;
     border-radius: 10px;
-    border-left: 10px solid orange;
+    border-left: 10px solid rgba(255, 166, 0, 0.8);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+    gap: 0.5rem;
 }
 
 .project-title {
@@ -308,6 +314,7 @@ body {
 .project-description {
     font-size: 1rem;
     color: #5a5a5a;
+    max-width: 80%;
 }
 
 .utility-icon-links {
@@ -328,6 +335,26 @@ body {
 /* Announcements */
 .announcements-section {
     grid-area: announcements;
+}
+
+.announcements-container {
+    background-color: #fff;
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    align-items: start;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+    gap: 1rem;
+}
+
+.announcement-title {
+    font-size: 1rem;
+}
+
+.announcement-description {
+    color: #5a5a5a;
 }
 
 /* Trending */
