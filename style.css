@@ -65,6 +65,7 @@ body {
     height: 100vh;
     background-color: var(--primary-color);
     display: grid;
+    grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
     gap: 5rem;
     align-content: start;
@@ -88,7 +89,7 @@ body {
     font-size: 1.5rem;
     color: black;
     position: relative;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 0.5rem;
     border-bottom: 1px solid rgba(106, 142, 35, 1);
     transition: all 0.1s ease;
 }
@@ -112,7 +113,6 @@ body {
 .header-btn-item button span {
     display: inline-block;
     transition: all 0.2s ease;
-    font-size: 2rem;
 }
 
 /* Header */
