@@ -229,7 +229,7 @@ body {
 
 .header-btn-list {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
     gap: 0.5rem;
 }
