@@ -82,13 +82,11 @@ body {
 .sidebar-list-item a {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.5rem;
     color: black;
     position: relative;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 0.5rem;
     border-bottom: 1px solid rgba(106, 142, 35, 1);
     transition: all 0.1s ease;
 }
@@ -110,9 +108,8 @@ body {
 
 .sidebar-list-item a span,
 .header-btn-item button span {
-    display: inline-block;
     transition: all 0.2s ease;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 /* Header */
@@ -120,9 +117,9 @@ body {
     grid-area: header;
     background-color: whitesmoke;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-    padding: 1rem 4rem 0;
+    padding: 1rem 2rem 0;
     display: grid;
-    gap: 2rem;
+    gap: 0.5rem;
     grid-template-columns: 1fr auto;
     grid-template-rows: repeat(2, auto);
 }
@@ -141,10 +138,10 @@ body {
 }
 
 #search-input {
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 0.5rem;
     display: flex;
-    flex-grow: 1;
+    flex: 1;
     background-color: var(--primary-color);
     border: 3px solid rgba(0, 0, 0, 0.8);
     border-radius: 25px;
@@ -172,8 +169,7 @@ body {
     display: flex;
     justify-content: flex-end;
     gap: 2rem;
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 1.5rem;
     align-items: center;
 }
 
@@ -191,28 +187,27 @@ body {
 /* User Greeting */
 .user-greeting {
     grid-row: 2;
-    grid-column: 1 / span 5;
+    grid-column: 1;
     display: grid;
     align-items: center;
     justify-self: start;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 1fr;
-    font-size: 2rem;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    font-size: 1.5rem;
 }
 
 .user-greeting .fa-cat {
     justify-self: center;
-    font-size: 4rem;
+    font-size: 2rem;
     grid-row: 1 / 3;
     grid-column: 1;
-    padding: 1rem;
+    padding: 0.5rem;
     background-color: var(--primary-color);
     border-radius: 50%;
 }
 
 .user-greeting .greeting {
-    padding: 1rem;
-    justify-self: start;
+    padding: 0.5rem 1rem;
     grid-row: 1 / 3;
     grid-column: 2 / 5;
 }
@@ -235,15 +230,18 @@ body {
 .header-btn-list {
     display: flex;
     justify-content: end;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .header-btn-item button {
     background-color: var(--primary-color);
-    padding: 0.75rem 2rem;
+    padding: 0.5rem 1rem;
     border: none;
     font-weight: bold;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    border-radius: 10px;
     transition: all 0.1s ease;
 }
 
@@ -258,7 +256,7 @@ body {
 
 /* Main */
 #main {
-    margin: 2rem 2rem 4rem;
+    margin: 1rem 1rem 2rem;
     grid-area: main;
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -296,11 +294,11 @@ body {
     grid-template-rows: repeat(3, 1fr);
     justify-content: center;
     align-items: stretch;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .project {
-    padding: 2rem 1.5rem;
+    padding: 1rem 1rem;
     background-color: #fff;
     border-radius: 10px;
     border-left: 10px solid rgba(255, 166, 0, 0.8);
@@ -311,13 +309,12 @@ body {
 }
 
 .project-title {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .project-description {
     font-size: 1rem;
     color: #5a5a5a;
-    max-width: 80%;
 }
 
 .utility-icon-links {
@@ -326,7 +323,7 @@ body {
 
 .utility-icon-links>a {
     padding: 0 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: black;
 }
 
@@ -342,12 +339,12 @@ body {
 
 .announcements-container {
     background-color: #fff;
-    padding: 2rem 1.5rem;
+    padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
     align-items: center;
 }
 
@@ -366,12 +363,12 @@ body {
 
 .trending-container {
     background-color: #fff;
-    padding: 2rem 1.5rem;
+    padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(4, 1fr);
     align-items: center;
     gap: 1rem;
 }
